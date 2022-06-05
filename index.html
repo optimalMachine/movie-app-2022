@@ -11,17 +11,22 @@
 
         <script type="text/babel">
             const root = document.getElementById("root");
-            const Title = (
-                <h3 id="title" onMouseEnter={()=> console.log("hello")}>Hello I'm a title</h3>
-            );
-            const Button = (
+            function Title () {
+                return (<h3 id="title" onMouseEnter={() => console.log("hello")}>Hello I'm a title</h3>);
+            };
+            const Button = () => (
                 <button style={{
                     backgroundColor: "tomato",
                 }} 
                 onClick={() => console.log("clicked")}>Click me!</button>
             );
 
-            const container = React.createElement("div", null, [Title, Button]);
+            const container = (
+                <div>
+                    <Title />
+                    <Button />
+                </div>
+            );
             ReactDOM.render(container, root);
 
         </script>

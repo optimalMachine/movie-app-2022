@@ -1,5 +1,6 @@
 # Movie App 2022 Project
 
-### A simple movie introduction app using ReactJS
+A front end project using reactJS and Firebase for backend. This web app functions like Netflix.
+This is non-commercial purpose project.
 
-### All created by Jiuk Choi
+All written by Jiuk Choi
